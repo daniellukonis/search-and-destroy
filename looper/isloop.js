@@ -2,7 +2,22 @@
 
 //Complete this algo
 const isLoop = (linkedlist) => {
+  // runner 1
+  // runner 2
+  const breadCrumb = [];
+  let currentStep = linkedlist.head;
+  while(currentStep){
 
+    if(breadCrumb.includes(currentStep.value)){
+      return currentStep.value;
+    }
+
+    breadCrumb.push(currentStep.value)
+
+    currentStep = currentStep.next;
+
+  }
+  return false;
 };
 
 
